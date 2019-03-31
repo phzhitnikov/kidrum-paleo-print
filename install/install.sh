@@ -68,7 +68,7 @@ then
   pip3 install flask
   
   echo "*** Adding python webserver script to autostart"
-  AddToAutostart "python3 /home/pi/main.py &"
+  AddToAutostart "python3 /home/pi/paleo-print/main.py &"
   
 else
   echo "*** Printer $PRINTER_NAME is not found. Did you forget to plug it in or install drivers?"
