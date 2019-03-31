@@ -20,7 +20,7 @@ apt-get -q update && apt-get -q upgrade -y && apt-get -q update
 
 #FIXME doesnt work properly
 echo "*** Installing packages: $PACKAGES"
-apt-get -q install $PACKAGES -y
+apt install $PACKAGES -y
 
 echo "*** Changing hostname to $HOSTNAME and turning on VNC. This will require reboot to apply"
 raspi-config nonint do_hostname $HOSTNAME
